@@ -13,7 +13,7 @@ def mailing(name, srt_num, srt_name, city, province, post_code,
 
     # process
     mail_address = name
-    if apt_num is not None:
+    if apt_num != None:
         mail_address = (mail_address + "\n" + apt_num + "-" + srt_num +
                         " " + srt_name + "\n" + city + " " + province + " "
                         + post_code)
@@ -44,7 +44,7 @@ def main():
     print("")
 
     # call functions
-    if apt_num is not None:
+    if apt_num != None:
         address = mailing(name, srt_num, srt_name, city,
                           province, post_code, apt_num)
     else:
